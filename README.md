@@ -49,15 +49,15 @@ Next, create a ssh key which will be deloyed to ec2. You can change the location
 
 You can now deploy the environment with Terraform.
 
-`terraform plan` will show you what terraform plans to do, i.e how many resources it will add.
+`terraformin init` and then `terraform plan` will show you what terraform plans to do, i.e how many resources it will add.
 
 If you are happy with the output, then `terraform apply`. Type 'yes' when prompted.
 
 ## End Result
 
-Once the deployment has completed, a single VPC with exist with a private and public subnets.
+Once the deployment has completed, a single VPC with exist with a private and public subnet.
 
-A bastion host will reside in the public subnet and a 'private server' will reside in the private subnet. Both instances have appropiate security groups.
+A bastion host will reside in the public subnet and a 'private server' will reside in the private subnet. Both instances have appropriate security groups.
 
 ## Cleanup
 You can destroy the environment with terraform destroy.
