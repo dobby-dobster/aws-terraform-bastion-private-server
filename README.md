@@ -1,5 +1,7 @@
 # VPC with private and public subnet with bastion/jumpbox and 'private server'
 
+![logo](diagram.png
+
 AWS services used:
 
 * VPC
